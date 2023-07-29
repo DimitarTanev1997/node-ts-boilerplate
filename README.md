@@ -1,4 +1,6 @@
 # node-ts-boilerplate
-A node with ts boilerplate based on https://fireship.io/lessons/typescript-nodejs-setup/
+A node with TS boilerplate based on https://fireship.io/lessons/typescript-nodejs-setup/
 
-Added tsc-watch to watch for changes and recompile, on success it executes "node ./dist/server.ts". No need for nodemon and concurrently at this point
+How does it work?
+- The TS compilator watches the src folder for changes and recompiles.
+- ts-watch watches for recompiles(onSuccess, onFailure) and executes a command("node ./dist/server.js") 
